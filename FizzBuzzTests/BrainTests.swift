@@ -1,5 +1,5 @@
 //
-//  FizzBuzzTests.swift
+//  BrainTests.swift
 //  FizzBuzzTests
 //
 //  Created by Oliver Cripps on 10/06/2019.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import FizzBuzz
 
-class FizzBuzzTests: XCTestCase {
+class BrainTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -29,6 +29,12 @@ class FizzBuzzTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testIsDivisibleByThree() {
+        let brain = Brain()
+        let result = brain.isDivisibleByThree(number: 3)
+        XCTAssertEqual(result, true)
     }
 
 }
