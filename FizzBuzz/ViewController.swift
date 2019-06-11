@@ -10,10 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var game: Game?
+    
     var gameScore: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        game = Game()
         // Do any additional setup after loading the view.
     }
     
@@ -22,7 +25,12 @@ class ViewController: UIViewController {
     }
 
     func play(move: String) {
-        gameScore = 1
+        guard let unwrappedGame = game else {
+            print("Game is nil!")
+            return
+        }
+        let response = unwrappedGame.play(move: move)
+        gameScore = response.score
     }
 
 }
