@@ -53,9 +53,13 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMe-nx-BOy">
                                         <rect key="frame" x="153" y="0.0" width="141.66666666666663" height="141.33333333333334"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzButton"/>
                                         <state key="normal" image="champagne" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lwc-XN-B2Y"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
