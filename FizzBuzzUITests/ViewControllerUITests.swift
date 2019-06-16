@@ -64,27 +64,34 @@ class ViewControllerUITests: XCTestCase {
     func testTapFizzBuzzButtonIncrementsTo15() {
         let app = XCUIApplication()
         let numberButton = app.buttons["numberButton"]
-        let fizzButton = app.buttons["fizzButton"]
-        let buzzButton = app.buttons["buzzButton"]
         let fizzBuzzButton = app.buttons["fizzBuzzButton"]
         
-        numberButton.tap()
-        numberButton.tap()
-        fizzButton.tap()
-        numberButton.tap()
-        buzzButton.tap()
-        fizzButton.tap()
-        numberButton.tap()
-        numberButton.tap()
-        fizzButton.tap()
-        buzzButton.tap()
-        numberButton.tap()
-        fizzButton.tap()
-        numberButton.tap()
-        numberButton.tap()
-        fizzBuzzButton.tap()
+        playTo14()
         
+        fizzBuzzButton.tap()
         let newScore = numberButton.label
         XCTAssertEqual(newScore, "15")
+    }
+    
+    func playTo14() {
+        let app = XCUIApplication()
+        let numberButton = app.buttons["numberButton"]
+        let fizzButton = app.buttons["fizzButton"]
+        let buzzButton = app.buttons["buzzButton"]
+        
+        numberButton.tap()
+        numberButton.tap()
+        fizzButton.tap()
+        numberButton.tap()
+        buzzButton.tap()
+        fizzButton.tap()
+        numberButton.tap()
+        numberButton.tap()
+        fizzButton.tap()
+        buzzButton.tap()
+        numberButton.tap()
+        fizzButton.tap()
+        numberButton.tap()
+        numberButton.tap()
     }
 }
