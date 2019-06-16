@@ -21,8 +21,7 @@ I have used a TDD process to construct the app, whilst following along to a tuto
 
 ## Images
 
-![GAME START](https://imgur.com/TYzfynw.png)
-![FIZZ BUZZ](https://imgur.com/kWRQWJa.png)
+![GAME START](https://imgur.com/TYzfynw.png)![FIZZ BUZZ](https://imgur.com/weMWbnO.png)
 
 ## Yvette's Extension Ideas
 
